@@ -3,6 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    margin-top: 16px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+}
+input[type=submit] {
+    background-color: #383838;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color:black;
+}
+.container {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+#contackt{
+    position: relative;
+    right: 50%;
+    top: 100px;
+
+}
+
 nav {
     height: 80px;
     background-color:  rgb(39, 39, 39);
@@ -89,7 +123,7 @@ width: fit-content;
 #grid_wrapper{
     display: grid;
     grid-template-columns: minmax(200px, 1fr);
-    grid-template-rows: 80px 80px 700px 700px 700px 700px 80px ;
+    grid-template-rows: 80px 80px 800px 800px 800px 800px 80px ;
     grid-template-areas: 
     "na na"
     "he he"
@@ -161,6 +195,8 @@ footer{
     align-items: center;
     justify-content: center;
 }
+
+
 @media screen and (min-width: 800px) {
     head {
         background-color: rgb(255, 255, 255);
