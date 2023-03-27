@@ -9,7 +9,6 @@
 
 .topnav a:hover {
     background-color: rgb(234, 77, 20);
-#ändra storleken 
 }
 
 input[type=text], select, textarea {
@@ -48,6 +47,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    z-index: 1;
 }
 #burger div {
     width: 25px;
@@ -166,6 +166,42 @@ width: fit-content;
     "fo fo";
 }
 
+#grid_wrapper4{
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr);
+    grid-template-rows: 80px 0px 250px 150px 200px 0px;
+    grid-template-areas: 
+    "na na"
+    "he he"
+    "s1 s1"
+    "s2 s2"
+    "s3 s3"
+    "fo fo";
+}
+
+#section_1servise{
+    grid-area: s1;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding-inline: 20%;
+    padding-top: 50px;
+}
+#section_2servise{
+    grid-area: s2;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding-inline: 20%;
+}
+#section_3servise{
+    grid-area: s3;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding-inline: 20%;
+    padding-bottom: 0px;
+}
 
 #section_about1{
     grid-area: s1;
@@ -177,6 +213,13 @@ width: fit-content;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold ;
     font-size: 110%;
+}
+#section_1contact{
+    grid-area: s1;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-image: url(../img/5.jpg);
+    background-color: black;
 }
 
 
@@ -210,6 +253,8 @@ header{
     justify-content: center;
     display: flex;
     align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 footer{
     grid-area: fo;
