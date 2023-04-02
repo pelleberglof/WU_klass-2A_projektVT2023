@@ -6,7 +6,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&family=Raleway:ital,wght@1,200&display=swap');
 
-
 .topnav a:hover {
     background-color: rgb(234, 77, 20);
 }
@@ -30,11 +29,10 @@ input[type=submit] {
     cursor: pointer;
 }
 input[type=submit]:hover {
-    background-color:rgb(234, 77, 20);
+    background-color:#ffbc63;
 }
 .container {
     border-radius: 5px;
-    background-color: #ffffff;
     padding-inline: 20%;
 }
 #contackt{
@@ -55,7 +53,6 @@ nav {
     background-color: rgb(0, 0, 0);
     margin: 5px;
     border-radius: 10%;
-    
 }
 #nav-links {
     display: flex;
@@ -92,7 +89,8 @@ nav {
     width: 5%;
 }
 #insta{
-width: 90%;
+width: 60px;
+
 }
 
 #bild1{
@@ -133,7 +131,7 @@ width: fit-content;
 #grid_wrapper{
     display: grid;
     grid-template-columns: minmax(200px, 1fr);
-    grid-template-rows: 80px 80px 800px 800px 800px 800px 80px ;
+    grid-template-rows: 80px 80px 550px 550px 550px 550px 80px ;
     grid-template-areas: 
     "na na"
     "he he"
@@ -147,7 +145,7 @@ width: fit-content;
 #grid_wrapper2{
     display: grid;
     grid-template-columns: minmax(200px, 2fr);
-    grid-template-rows: 80px 0px 430px  0px ;
+    grid-template-rows: 80px 0px 600px  0px ;
     grid-template-areas: 
     "na na"
     "he he"
@@ -158,7 +156,7 @@ width: fit-content;
 #grid_wrapper3{
     display: grid;
     grid-template-columns: minmax(200px, 1fr);
-    grid-template-rows: 80px 80px 450px 80px ;
+    grid-template-rows: 80px 0px 650px 0px ;
     grid-template-areas: 
     "na na"
     "he he"
@@ -169,7 +167,7 @@ width: fit-content;
 #grid_wrapper4{
     display: grid;
     grid-template-columns: minmax(200px, 1fr);
-    grid-template-rows: 80px 0px 250px 150px 200px 0px;
+    grid-template-rows: 80px 0px 450px 450px 450px 0px;
     grid-template-areas: 
     "na na"
     "he he"
@@ -181,47 +179,52 @@ width: fit-content;
 
 #section_1servise{
     grid-area: s1;
-    background-color: rgb(255, 255, 255);
     font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    padding-inline: 20%;
+    padding-inline: 15%;
     padding-top: 50px;
+    background-image: url(../img/foto\ kopiera.jpg);
+    background-position: center top;
+    color: #ffffff;
+    font-weight: bold;
 }
 #section_2servise{
     grid-area: s2;
-    background-color: rgb(255, 255, 255);
     font-family: 'Courier New', Courier, monospace;
+    padding-inline: 15%;
+    padding-top: 50px;
+    background-image: url(../img/edeting.jpg);
+    color: #ffffff;
     font-weight: bold;
-    padding-inline: 20%;
 }
 #section_3servise{
     grid-area: s3;
-    background-color: rgb(255, 255, 255);
     font-family: 'Courier New', Courier, monospace;
+    padding-inline: 15%;
+    padding-top: 50px;
+    background-image: url(../img/film\ kopiera.jpg);
+    background-position: center top;
+    color: #ffffff;
     font-weight: bold;
-    padding-inline: 20%;
-    padding-bottom: 0px;
 }
 
 #section_about1{
     grid-area: s1;
-    background-color: bisque;
-    padding-inline:  20%;
-    padding-top: 3%;
+    padding-inline:  10%;
+    padding-top: 60px;
     background-image: url(../img/5.jpg);
-    color: #ccc;
+    color: #ffffff;
     font-family: 'Courier New', Courier, monospace;
-    font-weight: bold ;
-    font-size: 110%;
+    position: relative;
+    resize: vertical
 }
+
 #section_1contact{
     grid-area: s1;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    background-image: url(../img/5.jpg);
-    background-color: black;
+    background-image: url(../img/nyc\ kopiera.jpg);
+    padding-top: 60px;
 }
-
 
 #section_1{
     grid-area: s1;
@@ -247,6 +250,7 @@ width: fit-content;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
+
 header{
     grid-area: he;
     background-color: rgb(255, 255, 252);
@@ -265,7 +269,6 @@ footer{
     height: 80px;
 }
 
-
 @media screen and (min-width: 800px) {
     head {
         background-color: rgb(255, 255, 255);
@@ -283,8 +286,82 @@ footer{
         "s3 s4"
         "fo fo";
     }
+    #grid_wrapper2{
+        display: grid;
+        grid-template-columns: minmax(200px, 2fr);
+        grid-template-rows: 80px 0px 430px  0px ;
+        grid-template-areas: 
+        "na na"
+        "he he"
+        "s1 s1"
+        "fo fo";
+    }
+    #grid_wrapper4{
+        display: grid;
+        grid-template-columns: minmax(200px, 1fr);
+        grid-template-rows: 80px 0px 230px 230px 230px 0px;
+        grid-template-areas: 
+        "na na"
+        "he he"
+        "s1 s1"
+        "s2 s2"
+        "s3 s3"
+        "fo fo";
+    }
 nav {
     background-color: rgb(255, 255, 252);;
+}
+#section_about1{
+    grid-area: s1;
+    padding-inline:  20%;
+    padding-top: 60px;
+    background-image: url(../img/5.jpg);
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold ;
+    position: relative;
+    resize: vertical
+}
+#section_1servise{
+    grid-area: s1;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding-inline: 20%;
+    padding-top: 50px;
+    background-image: url(../img/foto\ kopiera.jpg);
+    background-position: center top;
+    color: #ffffff;
+}
+#section_2servise{
+    grid-area: s2;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding-inline: 20%;
+    padding-top: 50px;
+    background-image: url(../img/edeting.jpg);
+    color: #ffffff;
+}
+#section_3servise{
+    grid-area: s3;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding-inline: 20%;
+    padding-top: 50px;
+    background-image: url(../img/film\ kopiera.jpg);
+    background-position: center top;
+    color: #ffffff;
+    
+}
+footer{
+    grid-area: fo;
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
 }
 #nav-links {
     flex-direction: row;
