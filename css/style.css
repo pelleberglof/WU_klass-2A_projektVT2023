@@ -35,7 +35,7 @@ input[type=submit]:hover {
     border-radius: 5px;
     padding-inline: 20%;
 }
-#contackt{
+.contackt{
     position: relative;
 }
 
@@ -79,7 +79,7 @@ nav {
     font-weight: bold;
     text-transform: uppercase;
 }
-#footer_links {
+.footer_links {
     text-decoration: none;
     font-size: 1.25rem;
     letter-spacing: 0.1875rem;
@@ -90,11 +90,13 @@ nav {
 }
 #insta{
 width: 60px;
-
+justify-content: center;
+margin-left: -17px;
 }
 
-#bild1{
+.bild1{
     width: 70%;
+    height: fit-content;
     display: flex;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
 }
@@ -183,7 +185,10 @@ width: fit-content;
     padding-inline: 15%;
     padding-top: 50px;
     background-image: url(../img/foto\ kopiera.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center top;
+    text-align: center;
     color: #ffffff;
     font-weight: bold;
 }
@@ -193,8 +198,11 @@ width: fit-content;
     padding-inline: 15%;
     padding-top: 50px;
     background-image: url(../img/edeting.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #ffffff;
     font-weight: bold;
+    text-align: center;
 }
 #section_3servise{
     grid-area: s3;
@@ -202,9 +210,12 @@ width: fit-content;
     padding-inline: 15%;
     padding-top: 50px;
     background-image: url(../img/film\ kopiera.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center top;
     color: #ffffff;
     font-weight: bold;
+    text-align: center;
 }
 
 #section_about1{
@@ -212,10 +223,13 @@ width: fit-content;
     padding-inline:  10%;
     padding-top: 60px;
     background-image: url(../img/5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #ffffff;
     font-family: 'Courier New', Courier, monospace;
     position: relative;
-    resize: vertical
+    resize: vertical;
+    text-align: center;
 }
 
 #section_1contact{
@@ -223,7 +237,10 @@ width: fit-content;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     background-image: url(../img/nyc\ kopiera.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 60px;
+    text-align: center;
 }
 
 #section_1{
@@ -231,24 +248,32 @@ width: fit-content;
     background-color: rgb(255, 255, 252);
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
 }
 #section_2{
     grid-area: s2;
     background-color: rgb(255, 255, 252);
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
 }
 #section_3{
     grid-area: s3;
     background-color: rgb(255, 255, 252);
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
 }
 #section_4{
     grid-area: s4;
     background-color: rgb(255, 255, 252);
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
 }
 
 header{
@@ -320,7 +345,11 @@ nav {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold ;
     position: relative;
-    resize: vertical
+    resize: vertical;
+    display: flex;
+    justify-content: center;
+    
+    
 }
 #section_1servise{
     grid-area: s1;
@@ -377,4 +406,9 @@ footer{
 .nav_active{
     transform: none
 }
+#insta{
+    width: 60px;
+    justify-content: center;
+    margin-left: -0px;
+    }
 }
