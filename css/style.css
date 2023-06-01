@@ -65,7 +65,7 @@ nav {
     position: absolute;
     top: -500px;
     right: 0px;
-    transition: none all 0.5s;
+    transition: none;
 }
 #nav-links li {
     list-style: none;

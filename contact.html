@@ -18,37 +18,31 @@
                 <li><a href="about.html">About</a></li>
             </ul>
     
-            <div id="burger">
-                <div id="burger_line_1"></div>
-                <div id="burger_line_2"></div>
-                <div id="burger_line_3"></div>
-            </div>
-        </nav>
-        <section id="section_1contact">
-  <div class="container">
-    <form action="action_page.php">
-  
-      <label class="contackt" for="fname">First Name</label>
-      <input class="contackt" type="text" class="fname" name="firstname" placeholder="Your name..">
-  
-      <label class="contackt" for="lname">Last Name</label>
-      <input class="contackt" type="text" class="lname" name="lastname" placeholder="Your last name..">
-  
-      <label class="contackt" for="subject">Subject</label>
-      <textarea class="contackt" class="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-  
-      <input class="contackt" type="submit" value="Submit">
-  
-    </form>
-  </div>
+                   <div id="burger">
+            <div id="burger_line_1"></div>
+            <div id="burger_line_2"></div>
+            <div id="burger_line_3"></div>
+        </div>
+    </nav>
+    <section id="section_1contact">
+        <div class="container">
+            <form action="action_page.php" method="post">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." required> 
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <ul class="footer_links">
+            <a href="https://www.instagram.com/pelle.berglof/?next=%2F"><img src="img/insta loga svart kopiera.png" id="insta" alt="instagram"></a>
+        </ul>
+    </footer>
 </div>
-</section>
-        <footer>
-            <ul class="footer_links">
-                <a href="https://www.instagram.com/pelle.berglof/?next=%2F"><img src="img/insta loga svart kopiera.png" id="insta" alt="instagram"></a>
-            </ul>
-        </footer>
-    </div>
-        <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
